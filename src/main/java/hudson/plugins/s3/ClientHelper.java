@@ -31,6 +31,9 @@ public class ClientHelper {
             client.setRegion(getRegionFromString(region));
         }
 
+        //TODO: do a more elaborate setup for endpoint config
+        client.setEndpoint("s3.cn-north-1.amazonaws.com.cn");
+
         return client;
     }
 
